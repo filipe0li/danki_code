@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; /* display: flex; não precisa pq é TOP */
+    font-family: "Roboto", cursive;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+aside {
+  /* order: 2;  /* altera a ordem padão */
+  background-color: #ccc;
+  padding: 190px 30px;
+}
+
+article {
+  /* order: 1; */
+  padding: 30px;
+  background-color: gray;
+}

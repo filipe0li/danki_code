@@ -1,0 +1,20 @@
+/*@import url ('https://fonts.googleapis.com/css2? family = Gloria + Hallelujah & display = swap');*/
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+* {     /* o asterisco * aplica a todas q vierem depois */
+    margin: 0;
+    padding: 0;
+    font-family: "Gloria Hallelujah", cursive !important; /* important da mais propriedade */
+}
+html, body {
+    height: 100%;
+}
+p {
+ 
+}
+p {
+    font-size: 13px;
+    font-family: fantasy;
+}

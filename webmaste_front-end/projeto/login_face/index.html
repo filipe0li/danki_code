@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Facebook</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+
+    <div class="center">
+
+      <div class="logo">
+        <h2>Facebook</h2>
+      </div>
+      <!--logo-->
+
+      <form method="POST" class="form-login">
+        <div class="form-element">
+          <p>E-mail ou telefone: </p>
+          <input type="email" name="usuario" id="usuario" />
+        </div>
+        <!--form-element-->
+
+        <div class="form-element">
+          <p>Senha: </p>
+          <input type="password" name="nenha" id="senha">
+        </div>
+        <!--form-element-->
+
+        <div class="form-element">
+          <input type="submit" name="acao" value="Enviar">
+        </div>
+        <!--form-element-->
+
+      </form>
+      <!--form-login-->
+
+    </div>
+    <!--center-->
+    <div class="clear"></div>
+  </header>
+
+  <section class="main">
+
+    <div class="center">
+
+      <div class="img-pessoas">
+        <img src="../images/face.png" alt="logo">
+      </div>
+      <!--img-pessoas-->
+
+      <div class="abrir-conta">
+        <h2>Abra sua conta</h2>
+        <h3>É gratuito e sempre será.</h3>
+
+        <form action="" class="criar-conta">
+          <div class="w50">
+            <input type="text" name="Nome" id="Nome" placeholder="Nome" />
+          </div>
+          <!--w50-->
+
+          <div class="w50">
+            <input type="text" name="Sbrenome" id="Sbrenome" placeholder="Sbrenome" />
+          </div>
+          <!--w50-->
+
+          <div class="w100">
+            <input type="email" name="email" id="email" placeholder="email" />
+          </div>
+          <!--w100-->
+
+          <div class="w100">
+            <input type="password" name="password" id="password" placeholder="Senha" />
+          </div>
+          <!--w50-->
+
+          <div class="w100">
+            <h2>Data de Nascimento: </h2>
+            <select name="nascimento-dia" id="nascimento-dia" class="nascimento">
+
+            </select>
+
+            <select name="nascimento-mes" id="nascimento-mes" class="nascimento">
+
+            </select>
+
+            <select name="nascimento-ano" id="nascimento-ano" class="nascimento">
+
+            </select>
+
+          </div>
+          <!--w100-->
+
+          <div class="w100 clear">
+
+            <div class="input-radio">
+              <input type="radio" name="sexo" id="sexoM" value="masculino">
+              <h2>Masculino</h2>
+            </div>
+            <!--w100-->
+
+            <div class="input-radio">
+              <input type="radio" name="sexo" id="sexoF" value="feminino">
+              <h2>Feminino</h2>
+            </div>
+            <!--input-radio-->
+
+          </div>
+          <!--w100-->
+
+          <div class="w100">
+            <input type="submit" name="acao" value="Cadastrar">
+          </div>
+          <!--w100-->
+
+        </form>
+        <!--criar-conta-->
+
+      </div>
+      <!--abrir-conta-->
+
+      <div class="clear"></div>
+    </div>
+    <!--center-->
+
+  </section>
+  <!--main-->
+  <section class="linguas">
+    <div class="center">
+      <a class="selected-lingua" href="#">Português-(BR)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+    </div>
+    <!--center-->
+    <div class="center">
+      <a href="#">Português-(BR)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+      <a href="#">Englesh-(US)</a>
+      <a href="#">Spanish-(ES)</a>
+    </div>
+    <!--center-->
+
+  </section>
+  <!--linguas-->
+
+  <script>
+    const cria = document.createElement("option");  // cria oelemento option
+    function criaDia() {
+      for (let i = 1; i <= 31; i++) {
+        const cria = document.createElement("option");  // cria o elemento option
+        var text = document.createTextNode(i);  // cria o texto a ser exibido
+        cria.appendChild(text); // adiciona o texto no option
+        cria.setAttribute('value', i); // adiciona o atributo  value
+        document.querySelector('#nascimento-dia').appendChild(cria);  // Insere no documento HTML
+      }
+    }
+    criaDia();
+
+    function criaMes() {
+      const nomeMes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+      for (let i = 0; i <= 11; i++) {
+        const cria = document.createElement("option");
+        var text = document.createTextNode(nomeMes[i]);
+        cria.appendChild(text);
+        cria.setAttribute('value', i+1);
+        document.querySelector('#nascimento-mes').appendChild(cria);
+      }
+    }
+
+    criaMes();
+
+    function criaAno() {
+      for (let i = 2021; i >= 1900; i--) {
+        const cria = document.createElement("option");
+        var text = document.createTextNode(i);
+        cria.appendChild(text);
+        cria.setAttribute('value', i);
+        if (i == 2021) {
+          cria.setAttribute('selected', 1);
+        }
+        document.querySelector('#nascimento-ano').appendChild(cria);
+      }
+    }
+    
+    criaAno()
+
+                         // Create a <p> node
+        // Create a text node
+                                            // Append the text to <p>
+            // Append <p> to <div> with id="myDIV"
+  // function criaDia() {
+  //   const dia = document.querySelector('#nascimento-dia');
+  //   for (i = 1; i <= 31; i++) {
+  //     dia.innerHTML += `<option value="${i}">${i}</option>`;
+  //   };
+  // };
+  // criaDia();
+
+  // function criaMes() {
+  //   const nomeMes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+  //   const mes = document.querySelector('#nascimento-mes');
+  //   for (i = 0; i <= 11; i++){
+
+  //     mes.innerHTML += `<option value="${i + 1}">${nomeMes[i]}</option>`;
+  //   }
+  // }
+  // criaMes();
+
+  // function criaAno() {
+  //   const ano = document.querySelector('#nascimento-ano');
+  //   for (i = 1900; i <= 2021; i++) {
+  //     ano.innerHTML += `<option value="${i}">${i}</option>`;
+  //     if (i == 2021) {
+  //     ano.innerHTML += `<option selected="1" value="${i}">${i}</option>`;
+  //     }
+  //   };
+  // }
+  // criaAno();
+
+  </script>
+</body>
+
+</html>

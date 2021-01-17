@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gloria Hallelujah", cursive;
+}
+html, body {
+    height: 100%;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: green;
+  animation-name: animacao_1;
+  animation-duration: 2s; /* duração da inimação */
+  animation-iteration-count: 1; /* Quantidade de vezes que será feita a inmação */
+  animation-delay: 1s; /* tempo antes de inifiar a animação */
+}
+
+.box:hover  {
+  animation: animacao_1 2s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes animacao_1 {
+  0% {  /* da parausar também o from */
+    left: 0px;
+    top: 0px;
+    background-color: green;
+  }
+
+  25% {
+    background-color: pink;
+    left: 50px;
+    top: 50px;
+  }
+
+  50% {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+  }
+
+  75% {
+    background-color: orange;
+    left: 50px;
+    top: 50px;
+  }
+
+  100% {  /* da parausar também o to */
+    background-color: green;
+    left: 0px;
+    top: 0px;
+  }
+}

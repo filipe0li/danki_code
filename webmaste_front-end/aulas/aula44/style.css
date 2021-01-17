@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; TABELAS JÁ USAM POR PADRÃO */
+    font-family: "Roboto", cursive;
+}
+
+html, body {
+    height: 100%;
+}
+
+.table {
+  display: table;
+  width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cel {
+  height: 400px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px;
+  display: table-cell;
+  border: 1px solid;
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gloria Hallelujah", cursive;
+}
+html, body {
+    height: 100%;
+}
+
+.box {
+  width: 100%;
+  padding: 30px 2%;
+  background-color: rgb(220, 220, 220);
+  position: relative;
+}
+
+.box > p {
+  display: inline;  /* diisplay inline faz com q a borda fiique abaiixo da linha */
+  border-bottom: 2px solid red;
+  color: #444444;
+  font-size: 13px;
+  word-break: break-all;  /* Não deixa a palavr ultrapassar nenhum limite */
+}
+
+.box > p:first-child {
+  word-wrap: break-word;
+}
+
+.box:first-child {
+  margin: 0 auto;
+  width: 50px;
+}
+
+.testes p {
+  width: 100px;
+  background-color: gray;
+  white-space: nowrap;  /* nao deixa quebrar a linha */
+}
+
+.testes > p:nth-child(2) {
+  white-space: pre; /* respeita espaços e quebras de linha e deixa ffugir do tamnho da box */
+/*  white-space: pre-line; respeita somente quebras de linha */
+}

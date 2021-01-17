@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+ul {
+    list-style-position: inside; /* coloca marcação */
+}
+li:nth-of-type(2) {  /* Ataque do type li, a segunda */
+    color: red;
+}
+span:nth-child(6) {    /* Ataque o sexta span */
+    color: red;
+}
+.box {
+    width: 100%;
+}
+.item {
+    box-sizing: border-box;
+    float:  left;
+    width: 33.33%;
+    height: 400px;
+    background-color: red;
+    border: 1px solid white;
+}
+.box div:last-of-type, .box > p:last-of-type {    /* Ultimo elemento do type p */
+    background-color: purple;
+}
+.box > p:last-child {
+    color: yellow;
+}
+.box div:last-of-type span{     /* Ultimo elemento do type span dentro da div */
+    color: white;
+}
+.box1 div:not(.two) {   /* Dentro de box1 ataque todas as div que não possuam classe .two */
+    background-color: yellowgreen;
+}
+div:empty {      /* Se div estiver vazio faça */
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+p::after {      /* Insere depois */
+    content: ' de teste';
+    background-color: coral;
+}
+p::before {
+    content: '--';
+    background-color: darkolivegreen;
+}
+/*  */

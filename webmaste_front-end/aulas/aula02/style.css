@@ -1,0 +1,10 @@
+body {
+    background-color: blue;
+}
+
+#div1 > /* > SERVE PARA APLICAR CFG APENAS SE ESTIVER DENTRO DA DIV INDICADA ANTES */h1{     /* PARA DIV USA # */
+    color: red;
+}
+.div2 h1{     /* PARA CLASS USA . */
+    color: orange;
+}

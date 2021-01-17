@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gloria Hallelujah", cursive;
+}
+html, body {
+    height: 100%;
+}
+.box {
+    width: calc(100% / 3);
+    height: 100px;
+    background-color: green;
+    float: left;
+    border: greenyellow 1px solid;
+}
+@media screen and (max-width: 1024px) { /* da para usar  min e mas e tbm width e height */
+    .box {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .box {
+        width: 100%;
+    }
+}

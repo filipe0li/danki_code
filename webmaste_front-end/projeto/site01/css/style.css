@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gloria Hallelujah", cursive;
+    text-decoration: none;
+}
+
+html, body {
+
+    height: 100%;
+    /*min-width: 1050px;  TRAVA A TELA */
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #212343;
+    padding: 0 2%;
+}
+
+.header img {
+    margin: 15px;
+}
+
+.container-banner {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2%;
+    height: 557px;
+    background-image: url('../images/header_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+}
+
+.formulario {
+    position: fixed;
+    right: calc(50% - (400px / 2)); /* gambiarra */
+    top: calc(50% - (585px / 2));   /* gambiarra */
+    width: 400px;
+    height: 585px;
+    padding: 15px;
+    background-color: white;
+    border: 12px solid rgba(120, 120, 120, 0.5);
+    font-weight: normal;
+    color: #999999;
+    font-size: 12px;
+    background-clip: padding-box; /* Nenhum fundo é desenhado abaixo da borda */
+    opacity: 0;
+    pointer-events: none;
+    transition: 300ms linear;
+    z-index: 1;
+}
+
+.menu_open {
+    opacity: 1;
+    transition: 300ms linear;
+    pointer-events: all;
+}
+
+.btnMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    line-height: 35px; /* ajusta altura da  linha, deixar igual a fonte*/
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.input-container span{
+    width: 100%;
+    color: #bbbbbb;
+}
+
+.formulario p {
+    width: 100%;
+    color: #bbbbbb;
+    margin: 20px 0;
+}
+
+input.campo {
+    width: 100%;
+    height: 55px;
+    border:  1px solid #cccccc;
+    padding: 8px 10px 8px 10px;
+}
+
+input.campo:focus {
+    outline: 0; /* remove borda ao selecionar item */
+}
+.formulario input[type=submit] {
+    font-size: 25px;
+    width: 280px;
+    height: 56px;
+    color: white;
+    background-color: #363a6d;
+    border: 0;
+    border-bottom: 5px solid #4a5097;
+    cursor: pointer;
+}
+
+.input-submit-container {
+    text-align: center;
+}
+
+.formulario input[type=submit]:hover {
+    background-color: #323665;
+}
+
+.container-list {
+    display: inline-block;
+    padding: 30px;
+    margin-top: 100px ;
+    background-color: rgba(33, 35, 67, 0.7);
+    color: white;
+    width: 100%;
+}
+
+.container-list ul li {
+    list-style-position: inside; /* aparece marcação da lista */
+    margin-top: 18px;
+}
+
+.container-2 {
+    margin: 0 auto;
+    padding: 40px 2%;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.container-2 h2{
+    font-weight: normal;
+}
+
+.container-2 p{
+    margin: 15px 0;
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+}
+
+.arrow {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/arrow.png);
+    background-size: 100%;
+}
+
+    /* section-1 */
+
+.section-1 {
+    padding: 90px 2%;
+}
+
+.section-1 h2{
+    text-align: center;
+    color: #462663;
+    font-weight: normal;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container-single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container-single p{
+    text-align: center;
+}
+
+.footer {
+    border-top: 2px solid #888888;
+    padding: 60px 0;
+    text-align: center;
+    color: #888888;
+}
+
+.footer p {
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* center */
+
+    .center {
+        max-width: 1000px;
+    }
+
+    .header > .center {
+        margin: 0;
+        text-align: left;
+    }
+    .container-banner > .center {
+        margin: 0;
+        text-align: left;
+    }
+
+    /* section-1 */
+
+    .container-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .container-single {
+        flex-grow: 1;   /* alinhamento das colunas */
+        flex-basis: calc(100% / 3); /* espaçamento entre as colunas */
+        padding: 20px;
+    }
+
+    .container-single p{
+        text-align: justify;
+    }
+
+    .formulario {
+        right: 0%;
+        top: 45px;
+    }
+}

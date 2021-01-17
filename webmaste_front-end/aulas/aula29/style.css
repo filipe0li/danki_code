@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gloria Hallelujah", cursive;
+}
+html, body {
+    height: 100%;
+}
+.box {
+    border: 1px solid black;
+    width: calc(100% / 3);
+    height: 200px;
+    float: left;
+    background-color: green;
+}
+
+/* AND NO MEIO DIZ QUE TEM QUE ACONTECER AS 2 REGRAS 
+@media screen and (max-width: 768px) and (max-height: 500px) {  
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+@media screen and (max-width: 768px) , screen and (max-height: 500px) {  /* , screen and NO MEIO DIZ QUE TEM QUE ACONTECER UMA OU OUTRA REGRA */
+    .box {
+        width: 100%;
+    }
+    
+}
+/* diz que quando a  tela for menor que 2/1 (100/500) ele entra em ação
+@media screen and (max-aspect-ratio: 2/1) {
+    .box {
+        width: 100%;
+    }
+}
+*/

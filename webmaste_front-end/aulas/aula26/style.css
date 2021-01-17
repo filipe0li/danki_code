@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gloria Hallelujah", cursive;
+}
+html, body {
+    height: 100%;
+}
+.box {
+    width: 50%;
+    background-color: gray;
+    padding-top: 50%; /* se baseia na largura da div pai */
+    margin-left: 50%;
+    display: inline-block;
+}
+.parent {
+    width: 50%;
+    height: 400px;
+    background-color: orange;
+}

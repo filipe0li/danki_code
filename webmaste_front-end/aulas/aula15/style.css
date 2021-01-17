@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: hotpink;
+}
+.text[type="text"/* NÃO PRECISA DE ASPAS */] {
+    background-color: hotpink;
+}
+input[type=submit] {
+    background-color: green;
+}
+
+
+
+[href="http://www.google.com.br"] {  /* O = DEVE CONTER EM href EXATAMENTE A PALAVRA DENTRO DA ESPECIFICAÇÃO */
+    background-color: yellow;
+}
+/* 
+[href="http://www.google.com.br"]    O = PROCURA EM href EXATAMENTE A PALAVRA http://www.google.com.br
+
+[href*="googl"]    O * PROCURA EM href A PALAVRA google (NÃO PRECISA SER EXATAMENTE IGUAL) EX: googleblablabla
+
+[href~="google"]    O ~ PROCURA EM href A PALAVRA google (PRECISA SER EXATAMENTE IGUAL) EX: google (NAÃ FUNCIONA googleblablabla)
+
+[href|="google"]    O ~ PROCURA EM href PALAVRAS QUE CONTENHAM google- EX: (google-blabla)
+
+[href^="goo"   O ^ PROCURA EM href PALAVRAS QUE COMEÇEM COM goo
+
+[href$="gle"   O ^ PROCURA EM href PALAVRAS QUE TERMINEM COM gle
+*/
+

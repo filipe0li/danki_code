@@ -1,0 +1,44 @@
+*{/*    * PEGA TODOS ELEMENTOS DA PÁGINA    */
+    margin: 0;
+    padding: 0;
+}
+
+div.menu {/*    QUANTO MAIS ESPECIFICADO FOR O ELEMENTO SERÁ LIDO PRIMEIRO,
+    SE TEIVEREM A MESMA ESPECIFICAÇÃO SERAM LIDOS COM A PRIORIDADE PARA QUEM FOI DESCRITO POR ULTIMO    */
+    width: 400px;
+    width: 900PX;
+}
+
+.menu {
+/*  display: block; É O PADRÃO*/
+    width: 700px;
+    background-color: purple;
+    margin: 30px auto; /*  MESMA COISA QUE
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10ox;
+    margin-bottom: 10px;  */
+/*  padding-left: 40px; PADDING É O ESPAÇAMENTO INTERNO
+    padding-right: 40px;
+    padding-top: 90;
+    padding-bottom: 90; */
+    text-align: center;
+}
+
+.menu > a {     /*  ESPECIFICA QUE SOMENTE O QUE ESTIVER DENTRO DA DIV MENU E FOR A RECEBE OS EFEITOS   */
+    color: orange;
+    font-size: 20px;
+    margin: 0 10PX;
+    text-decoration: none;/*    REMOVE DECORAÇÃO DO LINK    */
+    padding: 8px;
+    border: 1px solid red;/*    MESMA COISA QUE
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;    */
+
+}
+

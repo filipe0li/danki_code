@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.tipo1 {
+    color: rgb(100, 100, 100);
+}
+.link_ {    /* SE ESPECIFICAR MELHOR A ORDEM NÃO IMPORTA, SEMPRE O MAIS ESPECIFICO VAI TER PRIORIDADE */
+    font-size: 30px;
+    text-decoration: none;
+}
+.tipo2 {    /* se a marcação tiver mais de uma class, prevalece a classe que foi descrita por ultimo no css */
+    font-size: 48px;
+}
+/*  */

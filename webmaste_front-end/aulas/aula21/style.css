@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.parent {
+    width: 100%;
+    padding: 90px 0;
+    text-align: center;
+    background-color: #006699;
+}
+.item {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 20px;
+}
+.parent div:nth-of-type(2n +1) /* CONEÇE DO 1 E A CADA 2 (2n) */> div.item {
+    background-color: indigo;
+}
+.parent div:first-child div.item {
+    color: white;
+}
+.parent p:last-of-type {
+    color: red;
+}
+.parent p:first-child {
+    color: orange;
+}
+/*  */

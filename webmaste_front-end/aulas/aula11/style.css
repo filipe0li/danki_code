@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.center {
+    box-sizing: border-box;/* As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin. */
+    width: 1280px;
+    margin: 0 auto;/* 1º HORIZONTAL 2º VERTICAL */
+    background-color: gray;
+    /* padding: 30px; */
+}
+.artigo {
+    border: 3px solid rgba(255, 255, 255, 0.2);   /* GAMBIARRA PARA ADICIONAR ESPAÇAMENTO ENTRE AS COLUNAS, ADICIONA UMA BORDA TRANSPARENTE */
+    /* MESMA COIS QUE: */
+  /*border-style: solid;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.2);
+    */
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;  /* Alinha itens um ao lado do outro */
+    margin-right: -4px; /* NESCESÁRIO POIS display: inline-block; SETA 4px DE margin-right OU SETE width: 49% */
+    width: 50%;
+    margin-top: 30px;
+}
+.teste {
+    outline: 10px solid blue;    /* coloca borda pra fora da marcação */
+    vertical-align: top;
+    display: inline-block;  /* Alinha itens um ao lado do outro */
+    margin-right: -4px; /* NESCESÁRIO POIS display: inline-block; SETA 4px DE margin-right OU SETE width: 49% */
+    width: 50%;
+    margin-top: 30px;
+}
+span {
+    width: 30px;    /* não funciona pois o alinhamento padrão é display: inline-block; */
+    height: 300px;  /* não funciona pois o alinhamento padrão é display: inline-block; */
+    background-color: red;
+}
+body > p {  /* funciona pois o alinhamento padrão é display: block; */
+    width: 30px;
+    height: 30px;
+    background-color: red;
+
+}
+/*  */

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gloria Hallelujah", cursive;
+}
+.clear {
+    clear: both;
+}
+html, body {
+    height: 100%;
+}
+.sidebar {
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    float: left;
+}
+.content {
+    width: calc(100% - 300px);
+    height: 100px;
+    background-color: #6b6b6b;
+    float: left;
+}
+.box {
+    width: calc((100% / 3) + 100px);
+    height: 90px;
+    background-color: red;
+}
+.box2 {
+    width: 100vw;   /* vw/vh é 100% da janela + barra de scroll do navegador*/
+    height: 80vh;
+    background-color: green;
+}

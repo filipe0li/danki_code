@@ -1,0 +1,31 @@
+
+
+div.artigo {
+    width: 1280px;
+    background-color: rgb(200, 200, 200);
+    padding: 40px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 20px;
+
+}
+div.artigo h1{
+    color: rgb(66, 149, 244);
+    font-size: 25px;
+    font-family: 'Times New Roman'/* PRIMIRA TENTATIVA */, Times/* SE NAVEGADOR NÃO TIVER VAI PARA SEGUNDA */, /* SE NÃO TIVER NENHUMA VAI PARA A PADRÃO */serif;
+    font-style: italic;
+    font-weight: normal;/* H1 POR PADRÃO JÁ VEM BOLD */
+    font-variant: small-caps;
+}
+
+div.artigo p {
+    text-align: left;
+    color: #818181;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 12px;
+    line-height: 40px;/* altura da linha */
+}
+/*  */

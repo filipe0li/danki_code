@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+/* .bg {
+    width: 100%;
+    margin: 0 auto;
+    height: 30vw;
+    background-image: url(../images/sunset.jpg);
+    background-color: blue;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+.box {
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.8);
+}
+.item {
+    width: 33.33%;
+    margin-right: -4px;
+    display: inline-block;
+}
+.item img {
+    width:30%;
+}
+.item p {
+    background-color: royalblue;
+    display: inline-block;
+    text-align: left;
+}
+.last {
+    margin-right: 0;
+}

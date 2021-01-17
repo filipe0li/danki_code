@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://cursos.dankicode.com/app/Views/public/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Meu grupo do formulário</legend>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome"/><br>
+            <input type="text" name="email" id="e-mail" placeholder="Digite seu E-Mail"/><br>
+            <select name="lista" id="lista">
+                <option disabled selected>Qual sua idade?</option>
+                <option value="20">20</option>
+                <option value="5+">25+</option>
+                <option value="40+">40+</option>
+            </select>
+                <h2>Qual sua cidade?</h2>
+                <div class="input">
+                <input type="radio" name="cicade" value="Gravataí" /><span> Gravataí</span><br>
+                <input type="radio" name="cicade" value="Porto Alegre" /><span> Porto Alegre</span><br>
+                <input type="radio" name="cicade" value="Cachoeirinha" /><span> Cachoeirinha</span>br
+            </div><!--input-->
+            <h2>Qual sua comida favorita</h2>
+            <div class="input">
+            <input type="checkbox" name="comida[]" id="comida" /><span> Salada</span><br>
+            <input type="checkbox" name="comida[]" id="comida" /><span> Hanburger</span><br>
+            <input type="checkbox" name="comida[]" id="comida" /><span> Alá Minuta</span>br
+        </div><!--input--><br/>
+        <textarea name="observacao" id="textearea" cols="30" rows="10" placeholder="Possiu alguma observação?"></textarea><br>
+        <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

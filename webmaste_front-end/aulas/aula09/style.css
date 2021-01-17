@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.header {
+    width: 100%;
+    min-width: 1280px; /* define a largura minima para não bugar quando a tela for menor q 1280px q foi setado na div article */
+    height: 10%;/* Prioridade 3 */
+    max-height: 20%;/* Prioridade 2 */
+    min-height: 50%;/* Prioridade 1 TEM MAIS PRIORIDADE Q O PROPRIO HEIGHT */
+    background-color: gray;
+}
+.article {
+    margin: 0 auto;
+    width: 1280px;
+    height: 300px;
+    background-color: red;
+}
+/*  */

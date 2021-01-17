@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0 auto;
+}
+
+    /*  Divs Gerais  */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+  /*  Header  */
+
+header {
+  background-color: rgb(220, 220, 220);
+  padding: 10px 2% 40px 2%;
+}
+
+  /*  space-between  */
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+  /* logo  */
+
+.logo-1 {
+  width: 160px;
+  height: 70px;
+  background-image: url(../images/logo1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-2 {
+  width: 160px;
+  height: 70px;
+  background-image: url(../images/logo2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  /* section */
+
+
+.bg {
+  position: relative;
+  height: 500px;
+  background-image: url(../images/bg-form.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container {
+  z-index: 1;
+  float: right;
+  margin-right: 40px;
+  max-width: 400px;
+  height: 550px;
+  width: 100%;
+  position: absolute;
+  top: -5%;
+  right: 30px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.562);
+}
+
+.form-container h2 {
+  margin: 0;
+  font-weight: normal;
+  padding: 25px 15px;
+  color: black;
+  font-size: 18px;
+  background-color: rgb(210, 210, 210);
+}
+
+  /* form */
+
+.form-container form {
+  padding: 30px;
+}
+
+
+.form-wraper:not(:first-child) {  /* todos menos o primeiro filho */
+  margin-top: 40px;
+}
+.form-container form label,
+.form-container form p
+{
+  font-size: 13px;
+  color: #525252;
+}
+
+.form-container form input {
+  width: 100%;
+  outline: none;
+}
+
+.form-container form #tNome,
+.form-container form #tEmail,
+.form-container form #tTel {
+  box-sizing: border-box;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+  border: 1px solid #cccccc;
+
+}
+
+.form-container form input[type=submit]{
+  background-color: #033c50;
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  height: 60px;
+  cursor: pointer;
+  border: 0;
+}
+
+.form-wraper:last-child {
+  margin-top: 20px;
+}
+
+  /* section chamada */
+
+  /*  Seta  */
+.arrow {
+  position: absolute;
+  transform: translateX(-50%);
+  top: -31px;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  background-image: url(../images/arrow.png);
+}
+
+section.chamada {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.chamada .container {
+  padding: 30px 0;
+  background-color: #e2e5ec;
+}
+
+section.chamada h2 {
+  margin: 0;
+  padding-top: 30px;
+  width: 96%;
+  color: black;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+  /* section mosaico */
+
+.flex-mosaico {
+  display: flex;
+  border-top: 1px solid transparent;
+}
+
+.item-1-mosaico {
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+}
+
+.item-2-mosaico {
+  padding: 40px;
+  width: 40%;
+  background-color: #d9e7eb;
+  box-sizing: border-box;
+}
+
+.flex-mosaico:nth-child(1) .item-1-mosaico {
+  background-image: url(../images/mosaico1.jpg);
+}
+
+.flex-mosaico:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.flex-mosaico:nth-child(2) .item-1-mosaico {
+  background-image: url(../images/mosaico2.jpg);
+}
+
+.flex-mosaico:nth-child(3) .item-1-mosaico {
+  background-image: url(../images/mosaico3.jpg);
+}
+
+.flex-mosaico:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+.flex-mosaico:nth-child(4) .item-1-mosaico {
+  background-image: url(../images/mosaico4.jpg);
+}
+
+  /* footer */
+
+footer {
+  border-top: 1px solid transparent;
+}
+
+footer .container {
+  background-color: #e2e5ec;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer p {
+  margin: 0;
+  padding: 5px;
+
+}
+
+/*  Media  */
+
+@media screen and (max-width: 1024px) {
+
+  /* form */
+  .bg {
+    height: 620px;
+  }
+
+  .form-container {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* header */
+
+  header .space-between {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* section mosaico */
+
+  .mosaico .flex-mosaico {
+    display: block;
+  }
+
+  .item-1-mosaico {
+  width: 100%;
+  padding-top: 80%;
+  }
+
+  .item-2-mosaico {
+    width: 100%;
+    text-align: justify;
+  }
+
+}

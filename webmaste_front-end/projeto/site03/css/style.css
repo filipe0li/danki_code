@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+  /* divs gerais */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+    /* header */
+
+header {
+  height: 90vh;
+  max-height: 700px;
+  background-image: url(../images/capa.png);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 2%;
+  font-weight: 300;
+}
+
+nav > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 100px;
+  height: 50px;
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+}
+
+nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .chamada-1 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 200px
+}
+
+.chamada-1 div {
+  max-width: 800px;
+}
+
+nav .chamada-1 h2 {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  font-weight: 300;
+}
+
+nav .chamada-1 p{
+  color: white;
+  font-size: 15px;
+  max-width: 350px;
+}
+
+  /* sessao-1 */
+
+.sessao-1 {
+  background-color: #472562;
+  padding: 20px 2%;
+}
+
+.sessao-1 .texto {
+  font-weight: 300;
+}

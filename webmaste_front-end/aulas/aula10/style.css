@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.center {
+    box-sizing: border-box;/* As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin. */
+    width: 1280px;
+    margin: 0 auto;/* 1º HORIZONTAL 2º VERTICAL */
+    background-color: gray;
+    padding: 30px;
+}
+.artigo {
+    width: 100%;
+    margin: 50px 30px 50px 30px; /* sentido hórario: cima, direita, baixo e esquerda */
+    margin: 50px 30px; /* 1º HORIZONTAL 2º VERTICAL */
+}

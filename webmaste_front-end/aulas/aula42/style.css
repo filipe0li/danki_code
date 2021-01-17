@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Gloria Hallelujah";
+    src: url(../font/GloriaHallelujah-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gloria Hallelujah", cursive;
+}
+html, body {
+    height: 100%;
+}
+
+.box {
+  width: 30%;
+  padding-top: 30%; /* MESMA COISA QUE  HEIGHT */
+  background-color: black;
+  margin: 50px;
+  position: relative;
+  border-radius: 20px;
+  transition: transform 1s;
+}
+
+.box:hover {
+  transform: scale(1.2, 1.2) rotate(10deg);
+}
+
+.teste {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: red;
+  border-radius: 50%;
+  border: 10px solid green;
+}
+
+.transform {
+  display: flex;
+  justify-content: center;
+  
+  width: 40%;
+  max-width: 500px;
+  padding-top:  calc(40% - 20px);
+  border: 3px solid #cccccc;
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 1s;
+  transition-property: transform;
+}
+
+.transform:hover {
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.transform p {
+  height: 20px;
+}
+
+@keyframes animacao {
+  0% {
+    transform: translateY(-50%, -50%) rotateY(0deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+}

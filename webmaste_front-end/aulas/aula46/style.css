@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", cursive;
+}
+
+html, body {
+    height: 100%;
+}
+
+.box {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom right, rgb(255,0,0), green, rgba(255, 166, 0, 0.589), purple, #000000);
+}
+
+.box2 {
+  width: 100%;
+  height: 200px;
+  background: repeating-linear-gradient(45deg,green 10%, orange , red 20%);
+}
+
+.box3 {
+  width: 100%;
+  height: 200px;
+  background: repeating-radial-gradient(red , orange 25%, green 20%);
+}
