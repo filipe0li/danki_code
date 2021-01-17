@@ -12,43 +12,55 @@ html, body {
   /* divs gerais */
 
 .container {
+  width: 100%;
   max-width: 1280px;
+  padding: 0 100px;
   margin: 0 auto;
+}
+
+.space-between{
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
     /* header */
 
 header {
   height: 90vh;
+  min-height: 500px;
   max-height: 700px;
   background-image: url(../images/capa.png);
   background-size: cover;
   background-position: center;
-  padding: 40px 2%;
+  padding: 30px 0;
   font-weight: 300;
 }
 
-nav > .container {
-  display: flex;
-  justify-content: space-between;
-}
-
 nav .logo {
-  width: 100px;
-  height: 50px;
+  width: 180px;
+  height: 90px;
   background-color: aliceblue;
   background-size: cover;
   background-position: center;
 }
 
 nav ul {
-  margin: 0;
+  margin: 45px 0px;
   list-style-type: none;
 }
 
 nav li {
   display: inline-block;
-  margin: 0 20px;
+  margin-left: 30px;
 }
 
 nav li a {
@@ -56,19 +68,18 @@ nav li a {
   color: white;
 }
 
+  /* camada-1 */
+
 nav .chamada-1 {
   display: flex;
-  justify-content: flex-end;
-  margin: 200px
-}
-
-.chamada-1 div {
-  max-width: 800px;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 100px;
 }
 
 nav .chamada-1 h2 {
   color: white;
-  font-size: 40px;
+  font-size: 45px;
   margin: 0;
   font-weight: 300;
 }
@@ -84,8 +95,278 @@ nav .chamada-1 p{
 .sessao-1 {
   background-color: #472562;
   padding: 20px 2%;
+  height: 400px;
 }
 
-.sessao-1 .texto {
+.sessao-1 .container {
+  position: relative;
+  padding-top: 50px;
+}
+
+.texto {
   font-weight: 300;
+  color: white;
+}
+
+.texto h2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.texto p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.texto ul {
+  font-size: 18px;
+  padding-left: 19px;
+}
+
+.texto ul li {
+  margin-bottom: 5px;
+}
+
+li span {
+  margin-left: -8px;
+}
+
+
+.btn-texto {
+  margin-top: 20px;
+  background-color: #ff703d;
+  width: 165px;
+  height: 44px;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.celular {
+  position: absolute;
+  background-image: url(../images/device.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  top: -90px;
+  width: 600px;
+  height: 470px;
+  right: 120px;
+  opacity: 1;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+
+  /* sessao-2 */
+
+.sessao-2 {
+  background-color: white;
+  text-align: center;
+  margin-top: 80px;
+  color: #472663;
+  height: 450px;
+}
+
+.sessao-2 h2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+.sessao-2 p {
+  font-weight: 300;
+  font-size: 15px;
+  margin: 30px 0 0 0;
+}
+
+.sessao-2 img {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+  width: 98%;
+  max-width: 800px;
+  position: relative;
+  top: 30px;
+}
+/* sessao-3 */
+
+.sessao-3 {
+  background:linear-gradient(to right, #472663 50%, #f4f8fb 50%);
+}
+
+.container-loko{
+  margin: 0 auto;
+  padding: 170px 1% 0 1%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.sessao-3 h2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 23px;
+  margin: 0;
+}
+
+.sessao-3 p {
+  font-size: 15px;
+}
+
+.part-1 {
+  padding-right: 30px;
+  width: 50%;
+  color: white;
+}
+
+.part-2 {
+  padding-left: 30px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.part-2 div p {
+margin: 0;
+}
+
+.part-2 .autor {
+  margin: 0 20px;
+  display: inline;
+  background-image: url(../images/128px.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.slider-bullets {
+display: flex;
+}
+.slider-bullets .circle {
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color:#aeaeae;
+}
+
+.slider-bullets .circle:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 800px) {
+
+  /* Menu */
+  
+  nav .space-between {
+    justify-content: center;
+  }
+
+  .space-between .logo {
+    display: none;
+  }
+
+  #menu_hamburger {
+    background-image: url(../images/Hamburger_icon.svg.png);
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
+  #menu_hamburger:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+  }
+  #menu_hamburger div {
+    opacity: 1;
+  }
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 32px 0;
+    top: 0px;
+    left: 0;
+    width: 100%;
+  }
+
+  .menu li {
+    width: 100%;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .menu li:hover {
+    background-color: rgb(230, 230, 230);
+    transition: background-color 0.2s;
+  }
+
+  .menu li a {
+    color: black;
+  }
+
+  .close {
+    opacity: 0;
+  }
+  /* div padrão */
+
+  .container {
+    padding: 0 2%;
+  }
+
+  /* chamada-1 */
+
+  nav .chamada-1 {
+    margin: 170px 0;
+    text-align: center;
+  }
+  nav .chamada-1 p {
+    max-width: 100%;
+  }
+
+  /* sessao-2 */
+
+  .sessao-3 image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  /* sessao-1 */
+
+  .sessao-1 .container {
+    padding-top: 0;
+  }
+
+  .celular {
+    opacity: 0;
+  }
+
+  .sessao-1 .space-between {
+    justify-content: center;
+  }
+
+  .texto {
+    text-align: center;
+  }
+
+  .texto ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .btn-texto {
+    margin: auto;
+  }
+
 }
